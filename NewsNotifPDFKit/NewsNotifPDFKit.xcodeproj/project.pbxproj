@@ -14,6 +14,7 @@
 		0DEE09E9227C089900B76DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E7227C089900B76DBE /* LaunchScreen.storyboard */; };
 		0DEE09F3227C096000B76DBE /* NewsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */; };
 		0DEE09F5227C0B8A00B76DBE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09F4227C0B8A00B76DBE /* NewsModel.swift */; };
+		0DEE09F7227C107700B76DBE /* attachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09F6227C107700B76DBE /* attachment.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0DEE09EA227C089900B76DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabViewController.swift; sourceTree = "<group>"; };
 		0DEE09F4227C0B8A00B76DBE /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		0DEE09F6227C107700B76DBE /* attachment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = attachment.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		0DEE09DD227C089700B76DBE /* NewsNotifPDFKit */ = {
 			isa = PBXGroup;
 			children = (
+				0DEE09F6227C107700B76DBE /* attachment.pdf */,
 				0DEE09F1227C092000B76DBE /* Models */,
 				0DEE09F0227C091800B76DBE /* Controllers */,
 				0DEE09DE227C089700B76DBE /* AppDelegate.swift */,
@@ -147,6 +150,7 @@
 				0DEE09E9227C089900B76DBE /* LaunchScreen.storyboard in Resources */,
 				0DEE09E6227C089900B76DBE /* Assets.xcassets in Resources */,
 				0DEE09E4227C089800B76DBE /* Main.storyboard in Resources */,
+				0DEE09F7227C107700B76DBE /* attachment.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

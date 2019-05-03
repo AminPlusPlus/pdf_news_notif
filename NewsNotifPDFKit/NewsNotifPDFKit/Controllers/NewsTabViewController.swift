@@ -11,9 +11,9 @@ import PDFKit
 
 class NewsTabViewController: UITableViewController {
     
-    let pdfModel = [NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: ""),
-                    NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: ""),
-                    NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: "")
+    let pdfModel = [NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: "attachment"),
+                    NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: "attachment"),
+                    NewsModel(Title: "All new Alif.Mobi app is coming soon", SubTitle: "Information", UrlPDF: "attachment")
                     ]
     
     
@@ -44,7 +44,7 @@ class NewsTabViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: segueId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         // Configure the cell...
         
         cell.textLabel?.text = pdfModel[indexPath.row].Title
@@ -55,14 +55,20 @@ class NewsTabViewController: UITableViewController {
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        performSegue(withIdentifier: segueId, sender: pdfModel[indexPath.row])
+        
     }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == segueId {
+            let destintation = segue.destination as! PDFViewController
+            destintation.NewsModel = sender as! NewsModel
+        }
+  
     }
     
 
