@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import PDFKit
 
 class PDFViewController: UIViewController {
+    
+    var document : PDFDocument?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

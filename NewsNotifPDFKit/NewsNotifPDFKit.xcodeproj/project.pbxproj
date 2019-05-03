@@ -13,6 +13,7 @@
 		0DEE09E6227C089900B76DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E5227C089900B76DBE /* Assets.xcassets */; };
 		0DEE09E9227C089900B76DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E7227C089900B76DBE /* LaunchScreen.storyboard */; };
 		0DEE09F3227C096000B76DBE /* NewsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */; };
+		0DEE09F5227C0B8A00B76DBE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09F4227C0B8A00B76DBE /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0DEE09E8227C089900B76DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DEE09EA227C089900B76DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabViewController.swift; sourceTree = "<group>"; };
+		0DEE09F4227C0B8A00B76DBE /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		0DEE09F1227C092000B76DBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0DEE09F4227C0B8A00B76DBE /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEE09F5227C0B8A00B76DBE /* NewsModel.swift in Sources */,
 				0DEE09E1227C089700B76DBE /* PDFViewController.swift in Sources */,
 				0DEE09DF227C089700B76DBE /* AppDelegate.swift in Sources */,
 				0DEE09F3227C096000B76DBE /* NewsTabViewController.swift in Sources */,
