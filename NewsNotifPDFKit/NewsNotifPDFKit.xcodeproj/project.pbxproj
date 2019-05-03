@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0DEE09DF227C089700B76DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09DE227C089700B76DBE /* AppDelegate.swift */; };
-		0DEE09E1227C089700B76DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09E0227C089700B76DBE /* ViewController.swift */; };
+		0DEE09E1227C089700B76DBE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09E0227C089700B76DBE /* PDFViewController.swift */; };
 		0DEE09E4227C089800B76DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E2227C089800B76DBE /* Main.storyboard */; };
 		0DEE09E6227C089900B76DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E5227C089900B76DBE /* Assets.xcassets */; };
 		0DEE09E9227C089900B76DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE09E7227C089900B76DBE /* LaunchScreen.storyboard */; };
+		0DEE09F3227C096000B76DBE /* NewsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DEE09DB227C089700B76DBE /* NewsNotifPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsNotifPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEE09DE227C089700B76DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DEE09E0227C089700B76DBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DEE09E0227C089700B76DBE /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		0DEE09E3227C089800B76DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DEE09E5227C089900B76DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DEE09E8227C089900B76DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DEE09EA227C089900B76DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		0DEE09DD227C089700B76DBE /* NewsNotifPDFKit */ = {
 			isa = PBXGroup;
 			children = (
+				0DEE09F1227C092000B76DBE /* Models */,
+				0DEE09F0227C091800B76DBE /* Controllers */,
 				0DEE09DE227C089700B76DBE /* AppDelegate.swift */,
-				0DEE09E0227C089700B76DBE /* ViewController.swift */,
 				0DEE09E2227C089800B76DBE /* Main.storyboard */,
 				0DEE09E5227C089900B76DBE /* Assets.xcassets */,
 				0DEE09E7227C089900B76DBE /* LaunchScreen.storyboard */,
 				0DEE09EA227C089900B76DBE /* Info.plist */,
 			);
 			path = NewsNotifPDFKit;
+			sourceTree = "<group>";
+		};
+		0DEE09F0227C091800B76DBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE09E0227C089700B76DBE /* PDFViewController.swift */,
+				0DEE09F2227C096000B76DBE /* NewsTabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0DEE09F1227C092000B76DBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DEE09E1227C089700B76DBE /* ViewController.swift in Sources */,
+				0DEE09E1227C089700B76DBE /* PDFViewController.swift in Sources */,
 				0DEE09DF227C089700B76DBE /* AppDelegate.swift in Sources */,
+				0DEE09F3227C096000B76DBE /* NewsTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
